@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question No. 4</title>
+
+
+    <style>
+        main{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+      .grid-container {
+        justify-content: center;
+        width: 65%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 90px);
+        gap: 20px;
+        padding: 20px;
+        border-radius: 20px;
+      }
+
+
+      .grid-1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 4;
+      }
+
+
+      .grid-2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 4;
+      }
+
+
+      .grid-3 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+
+      .grid-4 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 7;
+      }
+
+
+      .grid-5 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 5;
+      }
+
+
+      .grid-6 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 7;
+      }
+
+
+      .box{
+        background-color: #011d38;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+    <div class="grid-container">
+      <div class="box grid-1">
+      </div>
+      <div class="box grid-2">
+      </div>
+      <div class="box grid-3">
+      </div>
+      <div class="box grid-4">
+      </div>
+      <div class="box grid-5">
+      </div>
+      <div class="box grid-6">
+      </div>
+    </div>
+</main>
+  </body>
+</html>

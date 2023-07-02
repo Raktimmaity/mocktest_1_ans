@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question No. 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        body{
+            background: #C9D6FF;  /* fallback for old browsers */
+        }
+        .cont{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            padding: 10px;
+            background: linear-gradient(to bottom, #b2fefa, #5dc6db);
+            border-radius: 20px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        h1{
+            text-align: center;
+        }
+        label{
+            margin-top: 20px;
+        }
+        input, select{
+            margin-top: 10px;
+            height: 30px;
+            border-radius: 20px;
+            outline: none;
+            padding: 5px;
+        }
+        .sec{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            justify-content: space-around;
+        }
+        #color{
+            border: 0;
+            padding: 0;
+        }
+
+        .sub{
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            height: 40px;
+            border: 0;
+            background-image: linear-gradient(to right, #5e8025, #025c51); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            color: white;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: 1s ease-in;
+            cursor: pointer;
+        }
+        .sub:hover{
+            background-image: linear-gradient(to left, #96c93d, #00b09b);
+        }
+    </style>
+</head>
+<body>
+    <!-- name, email, phone number, password, age, gender, date, color picker -->
+    <div class="cont">
+        <h1>Form Validation</h1>
+        <label for="name">Name:</label>
+        <input type="text" name="" id="" placeholder="Enter your name">
+        <label for="email">Email:</label>
+        <input type="email" name="" id="" placeholder="Enter your email">
+        <label for="ph">Phone Number:</label>
+        <input type="tel" name="" id="" placeholder="Enter your phone number">
+        <label for="pass">Password:</label>
+        <input type="password" name="" id="" placeholder="Enter your password">
+        <label for="age">Age:</label>
+        <input type="number" name="" id="" placeholder="Enter your age">
+        <label for="gender">Gender:</label>
+        <select name="" id="">
+            <option value="m">Male</option>
+            <option value="f">Female</option>
+            <option value="o">Others</option>
+        </select>
+        <div class="sec">
+        <label for="date">Date:</label>
+        <input type="date" name="" id="">
+        <label for="color">Choose Colour:</label>
+        <input type="color" name="" id="color">
+    </div>
+    <input type="submit" value="Submit" class="sub">
+    </div>
+</body>
+</html>

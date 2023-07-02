@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+    <style>
+        .cont{
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            background-color: #cfcfcf;
+            border: 2px solid black;
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+        .box1{
+            background-color: #ff0000;
+        }
+        .box2{
+            background-color: #1eff00;
+        }
+
+        /* this is static position */
+        .box3{
+            background-color: #0051ff;
+            position: static; 
+        }
+
+        /* This is relative position */
+        .relative{
+            background-color: #0051ff;
+            position: relative;
+            margin-top: 50px; 
+        }
+
+        /* This is absolute position */
+        .absolute{
+            background-color: #0051ff;
+            position: absolute;
+            margin-top: 70px; 
+        }
+
+        .head{
+            margin-top: 80px;
+        }
+
+        /* Container for fixed position */
+        .cont_fixed{
+            height: 300px;
+        }
+
+        /* This is fixed position */
+        .fixed{
+            background-color: #2ffff5;
+            position: fixed;
+            right: 4px;
+            bottom: 2px; 
+        }
+
+        /* This is sticky position */
+        .sticky{
+            position: sticky;
+            top: 3px;
+            background-color: #e48d8d;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Position -->
+    <div class="sticky">
+    <h1>Sticky Position</h1>
+     <div class="cont">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+     </div>
+    </div>
+
+    <!-- Static Position -->
+    <h1>Static Position</h1>
+     <div class="cont">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+     </div>
+
+     <!-- Relative Position -->
+     <h1>Relative Position</h1>
+     <div class="cont">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box relative"></div>
+     </div>
+
+     <!-- Absolute Position -->
+     <h1>Absolute Position</h1>
+     <div class="cont">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box absolute"></div>
+     </div>
+     
+     <!-- Fixed Position -->
+     <h1 class="head">Fixed Position</h1>
+     <div class="cont cont_fixed">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box fixed"><strong>Fixed Box</strong></div>
+     </div>
+
+</body>
+</html>
